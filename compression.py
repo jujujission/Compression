@@ -82,7 +82,7 @@ def convert_str_to_bin(s):
     return ''.join(['%08d' % int(bin(ord(i))[2:]) for i in s])
 
 
-# Decode a string and store all the needed information into it
+# Decode a string and store all the needed information 
 def prepare_str_for_compress(file_str):
     dict = create_dictionary(file_str)
     tree = build_tree(dict)
